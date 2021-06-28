@@ -1,0 +1,35 @@
+{
+  "name": "handyman",
+  "version": "1.0.0",
+  "description": "Set of usefull tools facilitating your apps creation",
+  "main": "Build/index.js",
+  "scripts": {
+    "clear": "shx rm -R Build && shx mkdir Build",
+    "build": "npm run clear && babel Src --out-dir=Build --watch --extensions=\".ts\"",
+    "types": "tsc -w",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArchAngel776/handyman.git"
+  },
+  "author": "ArchAngel776",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArchAngel776/handyman/issues"
+  },
+  "homepage": "https://github.com/ArchAngel776/handyman#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.5",
+    "jest": "^27.0.6",
+    "shx": "^0.3.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}
